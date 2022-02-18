@@ -108,12 +108,14 @@ const styles = StyleSheet.create({
     //   padding: 40,
     //   justifyContent: 'center',
     },
+
     title: {
       fontSize: 20,
       fontWeight: 'bold',
       elevation: 1,
       shadowColor: 'black'
     },
+
     separator: {
       marginVertical: 30,
       height: 1,
