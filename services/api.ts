@@ -1,13 +1,12 @@
 import axios from 'axios'
 
 const api = axios.create({
-  // validateStatus: function () { return true; }
-  baseURL: 'http://api.wasitt.com', // this is localhost (telenews)
-  // baseURL: 'http://192.168.0.101:3000',
-   // this is localhost
+  baseURL: 'https://community-open-weather-map.p.rapidapi.com', // this is localhost (telenews)
   headers: {
-    'Access-Control-Allow-Origin': '*',
-    Connection: 'keep-alive',
+    // 'Access-Control-Allow-Origin': '*',
+    // Connection: 'keep-alive',
+    'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com',
+    'x-rapidapi-key': '150832c484mshee5c13874a5f738p1c338bjsnda02d18b10a1'
   }
 })
 
