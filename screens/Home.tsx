@@ -56,7 +56,7 @@ export default function Home({ navigation, route }: RootStackScreenProps<'Home'>
         </View>
     )
 
-    function getRandomInt(min: number, max=min*10) {
+    function getRandomInt(min: number, max=min <= 600 ? (min*10) : min) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min;
