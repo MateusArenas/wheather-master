@@ -71,8 +71,8 @@ export default function Home({ navigation, route }: RootStackScreenProps<'Home'>
         <ImageBackground style={styles.container}
             source={{ uri }}
         >
-            <LinearGradient colors={['rgba(0,0,0,.75)', 'transparent']}
-                style={{ padding: 80, flex: 1, alignItems: 'center' }}
+            <LinearGradient colors={['#003d80', 'transparent']}
+                style={{ padding: 40 ,margin: 0, height:'100%', flex: 1, alignItems: 'center' }}
             >
                 <Image source={{ 
                     uri: `http://openweathermap.org/img/wn/${data?.weather[0]?.icon}@2x.png`,
@@ -103,17 +103,18 @@ export default function Home({ navigation, route }: RootStackScreenProps<'Home'>
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-    //   alignItems: 'center',
-    //   padding: 40,
-    //   justifyContent: 'center',
+    //  alignItems: 'center',
+    //  padding: 0,
+        flex: 1,
+        justifyContent: 'center',
+        backgroundColor: '#f5dd29',
     },
 
     title: {
       fontSize: 20,
       fontWeight: 'bold',
       elevation: 1,
-      shadowColor: 'black'
+      shadowColor: 'black',
     },
 
     separator: {
